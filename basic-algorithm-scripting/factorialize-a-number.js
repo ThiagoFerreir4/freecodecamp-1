@@ -1,11 +1,17 @@
 // Return the factorial of the provided integer.
 function factorialize(num) {
-	var total = num;
-	for (var i = num - 1; i > 0; i--) {
-		total *= i;
-		console.log(total);
-	}
-	return total;
+   var i =1;
+   test = num;
+   if(num ==0 ){
+    return 1;
+    }
+   else{
+     while(i<test){
+      num = num *i;
+      i++;
+     }
+   }
+  return num;
 }
 
 factorialize(5);
